@@ -50,8 +50,8 @@ const bool Y_ENDSTOP_INVERT = false;
 const bool Z_ENDSTOP_INVERT = false;
 
 // This determines the communication speed of the printer
-//#define BAUDRATE 115200
-#define BAUDRATE 250000
+#define BAUDRATE 115200
+//#define BAUDRATE 250000
 
 // Comment out (using // at the start of the line) to disable SD support:
 //#define SDSUPPORT
