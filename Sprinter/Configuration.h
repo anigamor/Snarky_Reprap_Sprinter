@@ -27,12 +27,12 @@
 // 5 is ParCan supplied 104GT-2 100K
 // 6 is EPCOS 100k
 // 7 is 100k Honeywell thermistor 135-104LAG-J01
-#define THERMISTORHEATER 1
+#define THERMISTORHEATER 4
 #define THERMISTORBED 1
 
 //// Calibration variables
 // X, Y, Z, E steps per unit - Metric Prusa Mendel with Wade extruder:
-#define _AXIS_STEP_PER_UNIT {80, 80, 3200/1.25,700}
+#define _AXIS_STEP_PER_UNIT {6.71, 6.314741, 2080,700}
 // Metric Prusa Mendel with Makergear geared stepper extruder:
 //#define _AXIS_STEP_PER_UNIT {80,80,3200/1.25,1380}
 // MakerGear Hybrid Prusa Mendel:
@@ -50,11 +50,11 @@ const bool Y_ENDSTOP_INVERT = false;
 const bool Z_ENDSTOP_INVERT = false;
 
 // This determines the communication speed of the printer
-#define BAUDRATE 115200
-//#define BAUDRATE 250000
+//#define BAUDRATE 115200
+#define BAUDRATE 250000
 
 // Comment out (using // at the start of the line) to disable SD support:
-#define SDSUPPORT
+//#define SDSUPPORT
 
 // Uncomment to make run init.g from SD on boot
 //#define SDINITFILE
@@ -366,7 +366,7 @@ const int dropsegments=5; //everything with less than this number of steps will 
 #define CONTROLLERFAN_SEC 60 //How many seconds, after all motors were disabled, the fan should run
 
 //This is for controlling a fan that will keep the extruder cool.
-//#define EXTRUDERFAN_PIN 66 //Pin used to control the fan, comment out to disable this function
+#define EXTRUDERFAN_PIN 66 //Pin used to control the fan, comment out to disable this function
 #define EXTRUDERFAN_DEC 50 //Hotend temperature from where the fan will be turned on
 
 //#define CHAIN_OF_COMMAND 1 //Finish buffered moves before executing M42, fan speed, heater target, and so...
