@@ -1,3 +1,9 @@
+Snarky_Reprap_Sprinter is just configuration software for my reprap.  It seems like it would be easier to use github to update the code on my raspi.
+
+
+Eventually I hope to also add commands to control an RGB LED strip using the arduino on my my RAMPS 1.4.
+
+
 The leading developers of Sprinter are currently Kliment, caru and midopple, though many others contribute with their patches.
 
 This is a firmware for RAMPS and other reprap single-processor electronics setups. It supports printing from SD card, active heatbed control, and ATmega internal pullups.
